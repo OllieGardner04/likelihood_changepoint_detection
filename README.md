@@ -3,4 +3,9 @@ An algorithm for detecting a changepoint in data where the underlying structure 
 
 ## The general idea
 
-$a$
+\[g(z) = \begin{cases}
+	g_{1}(z), & \min(z) \leq z \leq \theta_{1}, \\
+	g_{2}(z), & \theta_{1} < z \leq \theta_{2}, \\
+	\vdots \\
+	g_{n}(z), & \theta_{n-1} < z \leq \max(z).
+\end{cases}\]

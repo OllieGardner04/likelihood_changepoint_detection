@@ -3,9 +3,9 @@ An algorithm for detecting a changepoint in data where the underlying structure 
 
 ## The general idea
 
-$$g(z) = \begin{cases}
-	g_{1}(z), & \min(z) \leq z \leq \theta_{1}, \\
-	g_{2}(z), & \theta_{1} < z \leq \theta_{2}, \\
-	\vdots \\
-	g_{n}(z), & \theta_{n-1} < z \leq \max(z).
+Assume we have data $x$ and $y$, and we know that, at some value of $x$, the data generating process of $y$ changes. In this model, we know the underlying data structure, meaning we know the relationship between $x$ and $y$. What we do not know however, is the point at which the underlying structure changes. Let the underlying data generating process be given by
+
+$$g(x) = \begin{cases}
+	g_{1}(x), & \min(x) \leq z \leq \theta, \\
+	g_{2}(x), & \theta < z \leq \max(x).
 \end{cases}$$

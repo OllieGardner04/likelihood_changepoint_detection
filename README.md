@@ -1,2 +1,6 @@
 # likelihood_changepoint_detection
-Likelihood based method for changepoint detection where underlying data structure known, but changepoint is not
+An algorithm for detecting a changepoint in data where the underlying structure is known, but the changepoint is not.
+
+## The general idea
+
+$a$
